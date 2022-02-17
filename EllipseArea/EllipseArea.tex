@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[margin = 1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[parfill]{parskip}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+\newcommand{\skipline}{\vspace{\baselineskip}}
+\newcommand{\spacer}{\noalign{\medskip}}
+\newcommand{~}{\sim}
+\newcommand{\approches}{\rightarrow}
+\newcommand{\qarrow}{\quad \rightarrow \quad}
+\newcommand{\qqarrow}{\qquad \rightarrow \qquad}
+\newcommand{\qtext}[1]{\quad \text{ #1 } \quad}
+\newcommand{\qqtext}[1]{\qquad \text{ #1 } \qquad}
+\newcommand{\pard}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\answer}[1]{\textbf{\boldmath #1}}
+\newenvironment{problem}[1]{\textbf{Problem #1: }}{\newpage}
+
+\begin{document}
+	\begin{center}
+		\textbf{Area of Ellipse} \\
+		\textbf{Stephen Giang} \\
+		\skipline \skipline
+	\end{center}
+
+	\begin{proof}
+		Notice the following equation of an ellipse centered at the origin in rectangular coordinates
+		\[\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1\]
+		where $a \not = 0$ is the radius along the x-axis and $b \not = 0$ is the radius along the y-axis. Now we can rewrite the equation and solve for x.
+		\begin{align*}
+			\frac{x^2}{a^2} + \frac{y^2}{b^2} &= 1 & b^2x^2 &= a^2b^2 - a^2y^2 \\
+			b^2x^2 + a^2y^2 &= a^2b^2 & x^2 &= a^2 - \frac{a^2y^2}{b^2} 
+		\end{align*}
+		Thus we get the following equation:
+		\[x = \pm \sqrt{a^2 - \frac{a^2}{b^2}y^2}\]
+		Now we can integrate the following to find the Area:
+		\[A = \int_{-b}^{b} \sqrt{a^2 - \frac{a^2}{b^2}y^2}\,dy \,=\, 2\int_{0}^{b} \sqrt{a^2 - \frac{a^2}{b^2}y^2}\,dy\]
+		We can now make the following substitutions:
+		\[y = b\sin\theta \qquad dy = b\cos\theta\,d\theta\]
+		With these substitutions, we can see the bounds change to $y = 0$ and $y = \pi / 2$.
+		\begin{align*}
+			A &= 2\int_{0}^{\pi / 2} \sqrt{a^2 - \frac{a^2}{b^2}\left(b^2\sin^2\theta\right)}\,b\cos\theta\,d\theta & &= 2ab\int_{0}^{\pi / 2} \frac{\left(1 + \cos2\theta\right)}{2}\,d\theta \\
+			&= 2\int_{0}^{\pi / 2} \sqrt{a^2 \left(1 - \sin^2\theta\right)}\left(b\cos\theta\right)\,d\theta & &= ab\int_{0}^{\pi / 2} 1 + \cos2\theta\,d\theta \\
+			&= 2\int_{0}^{\pi / 2} \left(a\cos\theta\right)\left(b\cos\theta\right)\,d\theta & &= ab \left[\theta + \frac{\sin2\theta}{2}\right]^\frac{\pi}{2}_0 \\
+			&= 2ab\int_{0}^{\pi / 2} \cos^2\theta\,d\theta 
+		\end{align*}
+		Evaluating this, we get our final result:
+		\[\boldsymbol{A = \pi\,a\,b}\]
+		Notice, a circle is simply an ellipse with $a = b = r$, thus we also get the area of a circle:
+		\[\boldsymbol{A = \pi\,r^2}\]
+	\end{proof}
+\end{document}
