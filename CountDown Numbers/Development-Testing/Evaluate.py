@@ -240,20 +240,6 @@ def printAll():
         counter = counter + 1  
         print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs", end='\r')
     print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs")
-    
-
-def find_solutions():
-    start = time.perf_counter()
-    counter = 0
-    s = Solver(random.randint(100, 999), random.randint(0, 4))
-    print(s)
-    solutions = s.get_solutions()
-    for sol in solutions:
-        print(str(counter) + ": ", printArr(sol) + " = " + str(s.get_target()))
-        counter = counter + 1
-        print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs", end='\r')
-    print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs")
-     
 
 
 def writeCSV():
@@ -292,9 +278,27 @@ def readCSV():
     print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs")
 
 
-def find_solutions_csv():
+def find_solutions(target = random.randint(100, 999), num_large = random.randint(0, 4), set_numbers = False, numbers = []):
     start = time.perf_counter()
-    s = Solver(random.randint(100, 999), random.randint(0, 4))
+    counter = 0
+    s = Solver(target, num_large)
+    if set_numbers:
+        s.set_numbers(numbers)
+    print(s)
+    solutions = s.get_solutions()
+    for sol in solutions:
+        print(str(counter) + ": ", printArr(sol) + " = " + str(s.get_target()))
+        counter = counter + 1
+        print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs", end='\r')
+    print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs")
+    return [counter, round(time.perf_counter() - start, 4)]
+
+
+def find_solutions_csv(target = random.randint(100, 999), num_large = random.randint(0, 4), set_numbers = False, numbers = []):
+    start = time.perf_counter()
+    s = Solver(target, num_large)
+    if set_numbers:
+        s.set_numbers(numbers)
     print(s)
     with open("all_perms.csv", "r") as csvfile:
         csvreader = csv.reader(csvfile)
@@ -312,6 +316,23 @@ def find_solutions_csv():
                 counter = counter + 1
             print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs", end='\r')
     print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs")
+    return [counter, round(time.perf_counter() - start, 4)]
+
+
+def test(target, num_large, numbers):    
+    print("Target: ", target)
+    print("Num of Large: ", num_large)
+    print("Numbers: ", numbers)
+
+    print("\n----------------Without CSV----------------")
+    wo_csv = find_solutions(target=target, num_large=num_large, set_numbers=True, numbers=numbers)
+    print("\n-----------------With CSV-----------------")
+    w_csv = find_solutions_csv(target=target, num_large=num_large, set_numbers=True, numbers=numbers)
+
+    print("Num Solutions - without CSV: ", wo_csv[0])
+    print("Time - without CSV: ", wo_csv[1])
+    print("Num Solutions - with CSV: ", w_csv[0])
+    print("Time - with CSV: ", w_csv[1])
 
 if __name__ == '__main__':
 
@@ -319,4 +340,5 @@ if __name__ == '__main__':
     # printAll()
     # find_solutions()
     # readCSV()
-    find_solutions_csv()
+    # find_solutions_csv()
+    test(763, 2, [6, 5, 9, 4, 75, 50])
