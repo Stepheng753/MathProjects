@@ -309,7 +309,7 @@ def find_solutions_csv():
 
             if (solution == s.get_target()):
                 print(str(counter) + ": ", printArr(newLine) + " = " + str(solution))
-            counter = counter + 1
+                counter = counter + 1
             print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs", end='\r')
     print("Time: " + str(round(time.perf_counter() - start, 4)) + " secs")
 
