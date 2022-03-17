@@ -1,0 +1,16 @@
+{
+	"name": "CountDownNumbers",
+	"displayName": "CountDownNumbers",
+	"expo": {
+		"name": "CountDownNumbers",
+		"slug": "CountDownNumbers",
+		"version": "1.0.0",
+		"assetBundlePatterns": ["**/*"],
+		"orientation": "portrait",
+		"icon": "./frontend/assets/icon.png",
+		"splash": {
+			"resizeMode": "contain",
+			"backgroundColor": "#2877AB"
+		}
+	}
+}
