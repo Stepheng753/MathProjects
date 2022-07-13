@@ -1,0 +1,40 @@
+Sale ID,Company,Contact,Contact Sex,Contact Age,Contact City,Contact State,Product Company,Product ID,Product Type,Sale Price,Our Cost,Shipping Cost,Profit,Lead Source,Sale Month,Sale Year
+1,PNT Designs,Paul Thomas,M,43,Carnegie,OH,HP,M01-F0024,Desktop,479.99,315.50,21.10,143.39,Website,January,2018
+2,Ace Manufacturing,Margo Simms,F,37,Larimer,WV,HP,GT13-0024,Desktop,1249.99,998.00,21.10,230.89,Flyer 4,January,2018
+3,Sammie's,Sam Stine,M,26,Pittsburgh,PA,Dell,I3670,Desktop,649.99,510.25,21.10,118.64,Website,February,2018
+4,One Moe Time,Moe Eggert,M,35,St. Clair,PA,Dell,I3593,Laptop,399.99,310.50,17.40,72.09,Website,March,2018
+5,Get Going Gym,Jessica Elk,F,55,Pittsburgh,PA,HP,15M-ED,Laptop,699.99,584.50,17.40,98.09,Flyer 4,March,2018
+6,ANX Trucking,Sally Struthers,F,45,St. Clair,PA,HP,GT13-0024,Desktop,1249.99,998.00,21.10,230.89,Flyer 2,April,2018
+7,Samms Grooming,Michelle Samms,F,46,Carnegie,OH,ASUS,GA401IV,Laptop,1349.99,1152.25,17.40,180.34,Email,May,2018
+8,Roberts Produce,Mick Roberts,M,23,Lawrenceville,OH,Apple,MY2J2LL,Tablet,999.99,845.00,8.30,146.69,Website,July,2018
+9,Klondike Dairy,Ed Klondike,M,52,Carnegie,OH,Lenovo,81TC00,Laptop,649.99,510.25,17.40,122.34,Email,July,2018
+10,Jones Manufacturing,Phil Jones,M,56,Larimer,WV,HP,M01-F0024,Desktop,479.99,315.50,21.10,143.39,Flyer 2,August,2018
+11,James Cycles,Rick James,M,49,Pittsburgh,PA,ASUS,GA401IV,Laptop,1349.99,1152.25,17.40,180.34,Flyer 3,November,2018
+12,Weight Stalkers,Sue Etna,F,54,Banksville,OH,HP,GT13-0024,Desktop,1249.99,998.00,21.10,230.89,Flyer 2,November,2018
+13,Case Solutions,Jason Case,M,57,Pittsburgh,PA,Lenovo,81TC00,Laptop,649.99,510.25,17.40,122.34,Email,November,2018
+14,Doug's House,Doug Johnson,M,51,Pittsburgh,PA,Dell,I3670,Desktop,649.99,510.25,21.10,118.64,Website,December,2018
+15,Helms Manufacturing,Andy Sands,M,56,Lawrenceville,OH,Apple,MY2J2LL,Tablet,999.99,845.00,8.30,146.69,Flyer 1,December,2018
+16,Collins Advertising,Kim Collins,F,49,Pittsburgh,PA,Dell,I3593,Laptop,399.99,310.50,17.40,72.09,Flyer 2,January,2019
+17,Owens & Sons,Edna Sanders,F,46,Lawrenceville,OH,HP,15M-ED,Laptop,699.99,584.50,17.40,98.09,Email,February,2019
+18,Samms Grooming,Michelle Samms,F,46,Banksville,NY,Apple,MY2J2LL,Tablet,999.99,845.00,8.30,146.69,Website,March,2019
+19,Roberts Produce,Mick Roberts,M,23,Pittsburgh,PA,Dell,I3593,Laptop,399.99,310.50,17.40,72.09,Flyer 4,March,2019
+20,ANX Trucking,Sally Struthers,F,45,Banksville,NY,Lenovo,81TC00,Laptop,649.99,510.25,17.40,122.34,Website,April,2019
+21,Case Solutions,Jason Case,M,57,Pittsburgh,PA,HP,M01-F0024,Desktop,479.99,315.50,21.10,143.39,Flyer 4,May,2019
+22,Doug's House,Doug Johnson,M,51,Pittsburgh,PA,ASUS,GA401IV,Laptop,1349.99,1152.25,17.40,180.34,Website,August,2019
+23,PNT Designs,Paul Thomas,M,43,Carnegie,OH,Lenovo,81TC00,Laptop,649.99,510.25,17.40,122.34,Website,August,2019
+24,Ace Manufacturing,Margo Simms,F,37,Larimer,WV,ASUS,Q526FA,Laptop,1049.99,889.50,17.40,143.09,Flyer 4,November,2019
+25,Samms Grooming,Michelle Samms,F,46,Banksville,NY,Dell,I3670,Desktop,649.99,510.25,21.10,118.64,Flyer 2,November,2019
+26,Roberts Produce,Mick Roberts,M,23,Pittsburgh,PA,ASUS,Q526FA,Laptop,1049.99,889.50,17.40,143.09,Email,November,2019
+27,Klondike Dairy,Ed Klondike,M,52,Carnegie,OH,ASUS,Q526FA,Laptop,1049.99,889.50,17.40,143.09,Website,December,2019
+28,One Moe Time,Moe Eggert,M,35,St. Clair,PA,HP,15M-ED,Laptop,699.99,584.50,17.40,98.09,Email,December,2019
+29,Get Going Gym,Jessica Elk,F,55,Pittsburgh,PA,ASUS,GA401IV,Laptop,1349.99,1152.25,17.40,180.34,Flyer 2,December,2019
+30,Jones Manufacturing,Phil Jones,M,56,Larimer,WV,HP,M01-F0024,Desktop,479.99,315.50,21.10,143.39,Flyer 2,January,2020
+31,James Cycles,Rick James,M,49,Pittsburgh,PA,ASUS,GA401IV,Laptop,1349.99,1152.25,17.40,180.34,Flyer 1,January,2020
+32,Weight Stalkers,Sue Etna,F,54,Banksville,OH,HP,GT13-0024,Desktop,1249.99,998.00,21.10,230.89,Flyer 2,February,2020
+33,Collins Advertising,Kim Collins,F,49,Pittsburgh,PA,Dell,I3593,Laptop,399.99,310.50,17.40,72.09,Flyer 2,March,2020
+34,Owens & Sons,Edna Sanders,F,46,Lawrenceville,OH,HP,15M-ED,Laptop,699.99,584.50,17.40,98.09,Email,March,2020
+35,Samms Grooming,Michelle Samms,F,46,Banksville,NY,Apple,MY2J2LL,Tablet,999.99,845.00,8.30,146.69,Website,April,2020
+36,ANX Trucking,Sally Struthers,F,45,Banksville,NY,Lenovo,81TC00,Laptop,649.99,510.25,17.40,122.34,Website,April,2020
+37,Case Solutions,Jason Case,M,57,Pittsburgh,PA,HP,M01-F0024,Desktop,479.99,315.50,21.10,143.39,Flyer 4,April,2020
+38,Doug's House,Doug Johnson,M,51,Pittsburgh,PA,ASUS,GA401IV,Laptop,1349.99,1152.25,17.40,180.34,Website,May,2020
+39,One Moe Time,Moe Eggert,M,35,St. Clair,PA,Dell,I3593,Laptop,399.99,310.50,17.40,72.09,Website,May,2020
