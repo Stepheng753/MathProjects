@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Times Table</title>
+
+		<style type="text/css">
+			body {
+				background-color: #24283b;
+				color: white;
+				width: 100vw;
+				margin: auto;
+				text-align: center;
+				overflow-x: hidden;
+			}
+			a:active {
+				color: #f75252;
+			}
+			a {
+				margin-left: 30px;
+				margin-right: 30px;
+				text-decoration: underline;
+			}
+			#sketchHolder {
+				margin: 0 auto;
+				position: relative;
+			}
+			table,
+			th,
+			td {
+				margin-left: auto;
+				margin-right: auto;
+				border: 1px solid black;
+				table-layout: fixed;
+				width: 100%;
+			}
+			#highlight-row {
+				background-color: lightsalmon;
+			}
+		</style>
+
+		<script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
+	</head>
+
+	<body>
+		<h1 style="padding: 0">Times Table</h1>
+		<a id="Easy" onclick="javascript:setDifficulty('Easy')">Easy</a>
+		<a id="Medium" onclick="javascript:setDifficulty('Medium')">Medium</a>
+		<a id="Hard" onclick="javascript:setDifficulty('Hard')">Hard</a>
+		<div id="difficultyChosen" style="padding-top: 15px"></div>
+		<div style="padding-bottom: 25px; padding-top: 15px">
+			<div id="points-counter" style="display: inline-block; padding-right: 15px"></div>
+			<div id="time-counter" style="display: inline-block; padding-left: 15px"></div>
+		</div>
+
+		<div id="sketchHolder"></div>
+		<script src="TimesTable.js"></script>
+	</body>
+</html>
